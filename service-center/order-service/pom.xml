@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.dongnaoedu.springcloud</groupId>
+		<artifactId>service-center</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../</relativePath> <!-- lookup parent from repository -->
+	</parent>
+	<artifactId>order-service</artifactId>
+	<packaging>jar</packaging>
+	<name>订单服务</name>
+	<description>订单服务</description>
+	<dependencies>
+		<!-- 添加公共依赖 -->
+		<dependency>
+			<groupId>com.dongnaoedu.springcloud</groupId>
+			<artifactId>service-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+<properties>
+	<env.DOCKER_REGISTRY_URL>registry.cn-shanghai.aliyuncs.com</env.DOCKER_REGISTRY_URL>
+	<env.docker.namespace>mircospringcloud</env.docker.namespace>
+	</properties>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<defaultGoal>compile</defaultGoal>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.4.13</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>build</goal>
+						</goals>
+					</execution>
+				
+					<execution>
+						<id>push-image</id>
+						<phase>install</phase>
+						<goals>
+							<goal>push</goal>
+						</goals>
+						<configuration>
+							<imageName>${env.DOCKER_REGISTRY_URL}/${env.docker.namespace}/${project.artifactId}:${project.version}</imageName>
+						</configuration>
+					</execution>
+				</executions>
+
+				<configuration>
+					<imageName>${env.DOCKER_REGISTRY_URL}/${env.docker.namespace}/${project.artifactId}:${project.version}</imageName>
+					<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+					<resources>
+						<resource>
+							<targetPath>/</targetPath>
+							<directory>${project.build.directory}</directory>
+							<include>${project.build.finalName}.jar</include>
+						</resource>
+					</resources>
+					<!-- 以下两行是为了docker push到DockerHub使用的。 -->
+					<serverId>docker-aliyun</serverId>
+					 <!--install阶段也上传，否则只有deploy阶段上传-->
+<!-- 					 <forceTags>true</forceTags>
+ -->				<pushImage>false</pushImage>
+					<registryUrl>${env.DOCKER_REGISTRY_URL}</registryUrl>
+				</configuration>
+			</plugin>
+		</plugins>
+
+
+	</build>
+</project>

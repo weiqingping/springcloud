@@ -1,0 +1,3 @@
+com\dongnaoedu\springcloud\mail\db\MailRepository.class
+com\dongnaoedu\springcloud\mail\MailServiceApplication.class
+com\dongnaoedu\springcloud\mail\listener\OrderEventListener.class

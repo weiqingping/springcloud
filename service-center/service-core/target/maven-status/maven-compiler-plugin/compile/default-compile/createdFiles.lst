@@ -1,0 +1,13 @@
+com\dongnaoedu\springcloud\order\stream\OrderChannel.class
+com\dongnaoedu\springcloud\sms\domains\SmsDomain.class
+com\dongnaoedu\springcloud\order\events\OrderCreateEvent.class
+com\dongnaoedu\springcloud\sms\stream\SmsOutputChannel.class
+com\dongnaoedu\springcloud\sms\stream\SmsChannel.class
+com\dongnaoedu\springcloud\mail\domains\MailDomain.class
+com\dongnaoedu\springcloud\wms\domains\GoodsDomain.class
+com\dongnaoedu\springcloud\order\stream\OrderInputChannel.class
+com\dongnaoedu\springcloud\order\stream\OrderOutputChannel.class
+com\dongnaoedu\springcloud\order\events\OrderCancelEvent.class
+com\dongnaoedu\springcloud\order\domains\OrderDomain.class
+com\dongnaoedu\springcloud\stream\converter\FastJsonMessageConverter.class
+com\dongnaoedu\springcloud\sms\stream\SmsInputChannel.class

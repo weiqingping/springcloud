@@ -1,0 +1,10 @@
+com\dongnaoedu\springcloud\zuul\DefaultFallbackProvider$1.class
+com\dongnaoedu\springcloud\zuul\AppConfig.class
+com\dongnaoedu\springcloud\uaa\jwt\JwtConfiguration.class
+com\dongnaoedu\springcloud\zuul\filters\SendErrorRestFilter.class
+com\dongnaoedu\springcloud\uaa\jwt\UAAClaims.class
+com\dongnaoedu\springcloud\zuul\TonyConfigurationBean.class
+com\dongnaoedu\springcloud\uaa\jwt\JwtTokenProvider.class
+com\dongnaoedu\springcloud\zuul\filters\TokenValidataFilter.class
+com\dongnaoedu\springcloud\zuul\ZuulApplication.class
+com\dongnaoedu\springcloud\zuul\DefaultFallbackProvider.class

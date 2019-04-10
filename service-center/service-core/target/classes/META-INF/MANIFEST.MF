@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: ￥ﾆﾅ￩ﾃﾨ￩ﾀﾚ￧ﾔﾨ￥ﾰﾁ￨ﾣﾅ
+Implementation-Version: 1.0.0
+Built-By: Administrator
+Implementation-Vendor-Id: com.dongnaoedu.springcloud
+Build-Jdk: 1.8.0_131
+Implementation-URL: /service-core
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: ￥ﾊﾨ￨ﾄﾑ￧ﾧﾑ￦ﾊﾀ
+

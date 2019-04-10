@@ -1,0 +1,8 @@
+com\dongnaoedu\springcloud\uaa\db\UserRepository.class
+com\dongnaoedu\springcloud\uaa\db\UserDomain.class
+com\dongnaoedu\springcloud\uaa\web\JWTToken.class
+com\dongnaoedu\springcloud\uaa\jwt\JwtConfiguration.class
+com\dongnaoedu\springcloud\uaa\UAAApplication.class
+com\dongnaoedu\springcloud\uaa\jwt\UAAClaims.class
+com\dongnaoedu\springcloud\uaa\jwt\JwtTokenProvider.class
+com\dongnaoedu\springcloud\uaa\web\TokenController.class

@@ -1,0 +1,8 @@
+com\dongnaoedu\springcloud\order\client\SmsServiceClient.class
+com\dongnaoedu\springcloud\order\client\WmsFallbackFactory.class
+com\dongnaoedu\springcloud\order\client\WmsServiceClient.class
+com\dongnaoedu\springcloud\order\client\WmsServiceFallback.class
+com\dongnaoedu\springcloud\order\OrderService.class
+com\dongnaoedu\springcloud\order\OrderServiceApplication.class
+com\dongnaoedu\springcloud\order\OrderController.class
+com\dongnaoedu\springcloud\order\db\OrderRepository.class

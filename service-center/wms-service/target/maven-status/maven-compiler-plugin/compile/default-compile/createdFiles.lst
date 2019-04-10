@@ -1,0 +1,4 @@
+com\dongnaoedu\springcloud\wms\GoodsService.class
+com\dongnaoedu\springcloud\wms\db\GoodsRepository.class
+com\dongnaoedu\springcloud\wms\WmsController.class
+com\dongnaoedu\springcloud\wms\WmsServiceApplication.class
